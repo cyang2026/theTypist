@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Typing Practice Game</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="main.js"></script>
+  </head>
+  <body oncopy="return false" oncut="return false" onpaste="return false">
+    <div class="head-grid">
+      <div class="nav-grid">
+        <div class="box practice"><button type="button" class="nav-text"><a href="practice.html">Practice</a></button></div>
+        <div class="box test"><button type="button" class="nav-text"><a href="test.html">Test</a></button></div>
+      </div>
+      <div>
+        <h1><a href="index.html">THE TYPIST</a></h1>
+        <p>Practice your typing skills, take tests, and more!</p>
+      </div>
+    </div>
+    <div id="num-practice">
+      <div id="countup-clock">0</div>
+      <button id="beginNumPractice" type="button" onclick="generateNums()">Begin Practicing Numbers</button>
+      <div id="nums"></div>
+      <textarea id="num-textarea"></textarea>
+      <button id="done-nums" onclick="checkNums()">Done!</button>
+      <div id="accuracy-append-nums"></div>
+      <div id="wpm-append-nums"></div>
+    </div>
+    <div id="word-practice">
+      <div id="word-countup-clock">0</div>
+      <button id="beginWordPractice" onclick="beginWordPractice()" type="button">Begin Practicing Words</button>
+      <div id="words"></div>
+      <textarea id="word-textarea" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+      <button id="done-words" onclick="checkWords()">Done!</button>
+      <div id="accuracy-append-words"></div>
+      <div id="wpm-append-words"></div>
+    </div>
+  </body>
+</html>
